@@ -1,5 +1,6 @@
-{{ config(materialized='table') }}
-{{ config(schema='PUBLIC') }}
+{{ config(materialized='table', database='MYDB01', schema='PUBLIC') }}
+
+
 
 SELECT country, COUNT(country) AS count
 FROM mydb01.public.users
