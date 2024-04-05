@@ -1,4 +1,4 @@
-{{ config(materialized='table', database='MYDB01', schema='PUBLIC') }}
+{{ config(materialized='table', database='MYDB01') }}
 
 
 
